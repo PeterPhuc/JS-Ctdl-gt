@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script src="./js/index.js"></script>
+<script>
+//     console.log("\n\n\n\n\n");
+
+
+//     let p1 = {
+//         data: 1,
+//         next: null,
+//     }
+//     let obj1 = p1;
+//     let obj2 = p1;
+// //===> obj1 == obj2
+
+//     let p2 = {
+//         data: 2,
+//         next: null,
+//     }
+//     obj2.next = p2;   // <==> obj1.next = p2
+//     obj2 = p2;
+
+
+//     let p3 = {
+//         data: 3,
+//         next: null,
+//     }
+//     obj2.next = p3;   // <==> obj1.next.next = p3
+//     obj2 = p3;
+
+//     console.log(obj1);
+//     console.log(obj2);
+//===> Áp dụng làm danh sách liên kết, queue, stack
+
+//TH1
+    // let obj2 = obj1;
+    // console.log(obj1);
+    // obj2 = obj2.next;
+    // obj2 = obj2.next;
+    // obj2.data = {
+    //     new: "tôi đã đổi thay",
+    // };
+
+    // console.log(obj2 === obj1);
+    // console.log(obj2);
+    // console.log(obj1);
+
+
+//TH2
+    // function testthu(obj){            //có thể ứng dụng làm hàm đệ quy cây nhị phân
+    //     if(obj.next){
+    //         testthu(obj.next);
+    //     }else{
+    //         obj.data = null;
+    //     }
+    // }
+
+    // testthu(obj1);
+    // console.log(obj1);
+
+
+//TH3: for hay while cũng thế, bản chất TH3 này giống TH1 thoai
+    // for(let i = obj1; i != null; i = i.next){
+    //     if(!i.next){
+    //         i.data = {
+    //             song: "Ai mang cô đơn đi",
+    //             singer: 'Cây ATM'
+    //         };
+    //         break;
+    //     }
+    // }
+    // console.log(obj1);
+
+
+
+
+
+
+    console.log('\n\n\n\n');
+    let node1 = {
+        data: 1,
+        next: null
+    };
+
+    let obj1 = node1;
+    let obj2 = Object.assign({}, obj1);
+
+    console.log(obj1 === obj2);
+
+    obj1.data = 123;
+
+    console.log(obj1);
+    console.log(obj2);
+</script>
+</html>

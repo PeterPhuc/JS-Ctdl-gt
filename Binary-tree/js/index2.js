@@ -116,25 +116,6 @@ class Binary_tree {
                     this.#NodeMostLeft(tree, tree.right);
                 }
                 else  this.#DQ_DelDouKid(tree.right, data);
-                
-                // const temp = {};
-                // _this.#setNode(temp, tree.data, tree.left, tree.right);
-        
-                // if(!_this.#Tree_IsEmpty(tree.left)){
-                //     _this.#setNode(tree, tree.right.data, tree.right.left, tree.right.right);
-                // }
-                // else{
-                //     if(!_this.#Tree_IsEmpty(tree.right)) {
-                //         _this.#setNode(tree, tree.left.data, tree.left.left, tree.left.right);
-                //     }
-                //     else if(!_this.#Tree_IsEmpty(tree.left)) {
-                //         _this.#setNode(tree, tree.right.data, tree.right.left, tree.right.right);
-                //     }
-                //     else {
-                //         _this.#searchStandFor(tree, tree.right);
-                //         // _this.#setNode(tree, temp.data, temp.left, temp.right);  
-                //     }
-                // }
             }
         }
     }
